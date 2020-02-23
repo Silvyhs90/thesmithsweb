@@ -1,0 +1,48 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+.bg-dark{
+    background-color:#000000!important;
+}
+
+.bg-transparent{
+    background-color:#D4CDCE!important;
+} 
+
+.bg-secondary{
+     background-color:#E6E3E4!important;
+}
+
+.intro{
+    font-family: 'Roboto', sans-serif;
+}
+
+.table-dark{
+    font-family: 'Roboto', sans-serif;
+    background-color:#F2DFB0!important;
+   font-style: italic;
+   
+}
+
+
+.fondo{
+    background-image: url(../imagenes/fondo3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+   height:100vh;
+    
+   
+
+}
+
+.redes a{
+    font-size: 55px;
+    color:darkred;
+}
+.redes a:hover{
+    color: white;
+}
