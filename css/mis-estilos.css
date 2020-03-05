@@ -2,7 +2,13 @@ html {
     scroll-behavior: smooth;
 }
 
-
+.titulo{
+    font-style: oblique;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+    text-decoration-color: #ea0606 !important; 
+    
+}
 
 .bg-dark{
     background-color:#000000!important;
