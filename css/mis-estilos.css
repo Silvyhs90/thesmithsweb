@@ -5,6 +5,12 @@ html {
     
 }
 
+.columns{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
 .titulo{
     font-style: oblique;
     text-decoration-line: underline;
