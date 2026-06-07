@@ -3,17 +3,20 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="description" content="pagina tributo the smiths">
-    <meta name="author" content="silvina l.saucedo">
+    <meta name="description" content="Página tributo a The Smiths">
+    <meta name="author" content="Silvina L. Saucedo">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Inicio</title>
+    <title>The Smiths Fan Page</title>
+
     <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.min.css">
     <link rel="stylesheet" href="icomoon/style.css">
     <link rel="stylesheet" href="plugins/animate/animate.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/mis-estilos.css">
+
     <link rel="apple-touch-icon" sizes="57x57" href="iconos/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="iconos/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="iconos/apple-icon-72x72.png">
@@ -28,136 +31,248 @@
     <link rel="icon" type="image/png" sizes="96x96" href="iconos/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="iconos/favicon-16x16.png">
     <link rel="manifest" href="iconos/manifest.json">
-    <meta name="msapplication-TileColor" content="#3911cc">
-    <meta name="msapplication-TileImage" content="iconos/ms-icon-144x144.png">
-    <meta name="theme-color" content="#3911cc">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/mis-estilos.css">
-
+    <meta name="theme-color" content="#111111">
 </head>
-<body data-spy="scroll" data-target="#navbarResponsive" class="bg-transparent fondo">
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-        <div class="container justify-content-start">
-            <a class="navbar-brand" href="#">
-                <img src="imagenes/guitarra.svg" width="55" alt="logo pagina tributo"> The Smiths Band
+
+<body class="smiths-page">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top smiths-navbar">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="imagenes/guitarra.svg" width="48" alt="Logo de la página tributo">
+                <span class="ml-2">The Smiths</span>
             </a>
-            <button class="navbar-toggler order-first mr-2" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Abrir navegación">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="biografia.html">Biografia</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="portfolio.html">Información Multimedia</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="infoadicional.html">Discografia</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">Contacto</a>
-                    </li>
+                    <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="biografia.html">Biografía</a></li>
+                    <li class="nav-item"><a class="nav-link" href="portfolio.html">Multimedia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="infoadicional.html">Discografía</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
                 </ul>
-
             </div>
-
-
         </div>
     </nav>
 
-    <main class="container bg-secondary mt-5">
-        <header class="container-fluid text-center text-dark mt-5">
-            <div class="row">
-                <div class="col-12">
-                    <div class="my-2 mt-5">  
-                        <h1 class="h5"><span class="fa fa-music"></span> This Charming Man</h1>
-                        <button class="button2" id="btnPlay"><span class="far fa-play-circle"></span></button>
-                        <button class="button2" id="btnPause"><span class="far fa-pause-circle"></span></button>
-                        <button class="button2" id="btnReset"> Inicio </button>
-                       <script src="js/sound.js"></script> 
-                    </div> 
+    <header class="smiths-hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 text-center text-lg-left">
+                    <p class="overline">Manchester · 1982-1987</p>
+                    <h1>The Smiths</h1>
+                    <p class="hero-lead">Una página tributo a una de las bandas más influyentes del rock alternativo británico.</p>
+                    <div class="hero-buttons">
+                        <a href="infoadicional.html" class="btn btn-smiths-primary">Ver discografía</a>
+                        <a href="biografia.html" class="btn btn-smiths-outline">Leer biografía</a>
+                    </div>
+
+                    <div class="music-player mt-4">
+                        <div>
+                            <span class="song-label">Now playing</span>
+                            <strong>This Charming Man</strong>
+                        </div>
+                        <div class="player-actions">
+                            <button class="button2" id="btnPlay" aria-label="Reproducir"><span class="far fa-play-circle"></span></button>
+                            <button class="button2" id="btnPause" aria-label="Pausar"><span class="far fa-pause-circle"></span></button>
+                            <button class="button2" id="btnReset">Inicio</button>
+                        </div>
+                        <script src="js/sound.js"></script>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mt-5 mt-lg-0">
+                    <div class="hero-photo-wrap wow fadeIn">
+                        <img src="imagenes/seccion1.jpg" class="img-fluid" alt="The Smiths">
+                    </div>
                 </div>
             </div>
-            <img src="imagenes/seccion1.jpg" class="img-fluid py-5 avatar wow bounceInDown" data-wow-iteration=".5s" width="750" height="400" alt="logo principal">
-            <h1 class="py-2 font-weight-bold titulo">Pagina tributo a The Smiths</h2>
-        </header>
+        </div>
+    </header>
 
-        <div class="row justify-content-center">
+    <main>
+        <section class="container intro-modern">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <article class="intro-card wow fadeInUp">
+                        <h2>Indie, melancolía y guitarras inolvidables</h2>
+                        <p>
+                            The Smiths fue un grupo inglés formado en Mánchester por Morrissey, Johnny Marr, Andy Rourke y Mike Joyce. En pocos años construyeron una identidad única: letras sensibles e irónicas, guitarras brillantes y una estética que marcó a generaciones.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-            <div class="col-md-6 order-first order-md-last">
-                <p class="intro mt-5 wow fadeInLeft" data-wow-interaction=".3s">
-                    The Smiths fue un grupo inglés de rock alternativo formado en Mánchester en 1982.Estaba integrado por Steven Patrick Morrissey (vocalista), Johnny Marr (guitarrista), Andy Rourke (bajista) y Mike Joyce (batería). Ha sido denominada por los críticos como la banda más importante de rock alternativo que surgió en la escena británica de música independiente de la década de los 80.
-
-                    La banda firmó con el sello discográfico independiente Rough Trade Records. Con él, publicaron cuatro álbumes de estudio, varios recopilatorios y numerosos sencillos. Pese a que consiguieron un notable éxito comercial fuera del Reino Unido cuando aún estaban juntos, nunca publicaron un sencillo que tuviera éxito trascendente en su país. The Smiths se convirtieron en una de las bandas más influyentes de la década. La edición española de la revista Rolling Stone los ubicó en el puesto 15 de las 50 mejores bandas de rock de todos los tiempos.
-
-                    The Smiths se separaron en 1987, cuando Marr, debido a ciertos desacuerdos, abandonó la banda. Desde entonces han rechazado varias ofertas para reunirse.
-                </p>
+        <section class="container py-5">
+            <div class="section-heading text-center">
+                <p class="overline">Por qué siguen importando</p>
+                <h2>Una banda corta, una influencia enorme</h2>
             </div>
 
-        </div>
-        <div class="row">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <article class="smiths-card">
+                        <span class="card-icon">🎸</span>
+                        <h3>Sonido propio</h3>
+                        <p>La guitarra de Johnny Marr y la voz de Morrissey crearon una mezcla reconocible al instante.</p>
+                    </article>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <article class="smiths-card">
+                        <span class="card-icon">🖤</span>
+                        <h3>Letras memorables</h3>
+                        <p>Canciones llenas de humor negro, romanticismo, soledad y frases que quedaron grabadas.</p>
+                    </article>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <article class="smiths-card">
+                        <span class="card-icon">📀</span>
+                        <h3>Legado indie</h3>
+                        <p>Su influencia atraviesa el britpop, el indie rock y muchas bandas alternativas posteriores.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="timeline-section">
             <div class="container">
-                <blockquote class="twitter-tweet">
-                    <p lang="en" dir="ltr">heaven knows im miserable now</p>The Smiths (@TheSmiths_) <a href="https://twitter.com/TheSmiths_/status/8090230668?ref_src=twsrc%5Etfw">January 23, 2010</a>
-                </blockquote>
-                <script async src="https://platform.twitter.com/widgets.js"></script>
-
-                <blockquote class="twitter-tweet">
-                    <p lang="en" dir="ltr">So, if theres something you d like to try, if theres something you d like to try<br>ask me, I wont say no, how could I?</p>The Smiths (@TheSmiths_) <a href="https://twitter.com/TheSmiths_/status/8527234864?ref_src=twsrc%5Etfw">February 2, 2010</a>
-                </blockquote>
-                <script async src="https://platform.twitter.com/widgets.js"></script>
-
-
-                <blockquote class="twitter-tweet">
-                    <p lang="en" dir="ltr">I am human and I need to be loved..</p> The Smiths (@TheSmiths_) <a href="https://twitter.com/TheSmiths_/status/8163359810?ref_src=twsrc%5Etfw">January 24, 2010</a>
-                </blockquote>
-                <script async src="https://platform.twitter.com/widgets.js"></script>
+                <div class="section-heading text-center text-light">
+                    <p class="overline">Timeline</p>
+                    <h2>Momentos clave</h2>
+                </div>
+                <div class="timeline-grid">
+                    <div class="timeline-item"><span>1982</span><p>Se forma la banda en Mánchester.</p></div>
+                    <div class="timeline-item"><span>1984</span><p>Lanzan su álbum debut, The Smiths.</p></div>
+                    <div class="timeline-item"><span>1986</span><p>The Queen Is Dead consolida su lugar en la historia del indie.</p></div>
+                    <div class="timeline-item"><span>1987</span><p>La banda se separa, pero su influencia sigue creciendo.</p></div>
+                </div>
             </div>
-        </div>
+        </section>
+
+        <section class="container py-5 albums-preview">
+            <div class="section-heading text-center">
+                <p class="overline">Discografía esencial</p>
+                <h2>Álbumes para empezar</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-6 mb-4">
+                    <a class="album-card" href="infoadicional.html">
+                        <img src="imagenes/primeralbum1.jpg" alt="The Smiths">
+                        <span>The Smiths</span>
+                    </a>
+                </div>
+                <div class="col-md-3 col-6 mb-4">
+                    <a class="album-card" href="infoadicional.html">
+                        <img src="imagenes/segundoalbum1.jpg" alt="Meat Is Murder">
+                        <span>Meat Is Murder</span>
+                    </a>
+                </div>
+                <div class="col-md-3 col-6 mb-4">
+                    <a class="album-card" href="infoadicional.html">
+                        <img src="imagenes/terceralbum1.jpg" alt="The Queen Is Dead">
+                        <span>The Queen Is Dead</span>
+                    </a>
+                </div>
+                <div class="col-md-3 col-6 mb-4">
+                    <a class="album-card" href="infoadicional.html">
+                        <img src="imagenes/cuartoalbum1.jpg" alt="Strangeways, Here We Come">
+                        <span>Strangeways</span>
+                    </a>
+                </div>
+            </div>
+        </section>
 
 
+        <section class="container py-5 essentials-section">
+            <div class="section-heading text-center">
+                <p class="overline">Guía rápida</p>
+                <h2>Canciones para entrar en el universo Smiths</h2>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <article class="song-card">
+                        <span class="song-number">01</span>
+                        <h3>This Charming Man</h3>
+                        <p>La puerta de entrada perfecta: guitarras brillantes, energía y elegancia indie.</p>
+                    </article>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <article class="song-card">
+                        <span class="song-number">02</span>
+                        <h3>There Is a Light That Never Goes Out</h3>
+                        <p>Melancólica, romántica y cinematográfica: una de las más queridas por los fans.</p>
+                    </article>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <article class="song-card">
+                        <span class="song-number">03</span>
+                        <h3>Bigmouth Strikes Again</h3>
+                        <p>Rápida, irónica y filosa. Ideal para entender su costado más eléctrico.</p>
+                    </article>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <article class="song-card">
+                        <span class="song-number">04</span>
+                        <h3>Heaven Knows I'm Miserable Now</h3>
+                        <p>Humor oscuro, tristeza pop y una frase que resume mucho de su personalidad.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="container py-5 mood-section">
+            <div class="mood-box text-center">
+                <p class="overline">Interactivo</p>
+                <h2>¿Qué tema de The Smiths te toca hoy?</h2>
+                <p>Un detalle simple para que la página se sienta más viva cada vez que alguien entra.</p>
+                <button class="btn btn-smiths-primary" id="songMoodButton">Elegir canción</button>
+                <p class="mood-result" id="songMoodResult">Tocá el botón y dejá que la página elija.</p>
+            </div>
+        </section>
+
+        <section class="container py-5 facts-section">
+            <div class="section-heading text-center">
+                <p class="overline">Detalles de fanpage</p>
+                <h2>Datos rápidos</h2>
+            </div>
+
+            <div class="facts-grid">
+                <div class="fact-pill"><strong>Origen</strong><span>Mánchester, Inglaterra</span></div>
+                <div class="fact-pill"><strong>Actividad</strong><span>1982-1987</span></div>
+                <div class="fact-pill"><strong>Integrantes</strong><span>Morrissey, Marr, Rourke y Joyce</span></div>
+                <div class="fact-pill"><strong>Estilo</strong><span>Indie rock · Jangle pop · Post-punk</span></div>
+            </div>
+        </section>
+
+        <section class="quote-band">
+            <div class="container text-center">
+                <p>“I am human and I need to be loved...”</p>
+                <span>The Smiths Fan Page</span>
+            </div>
+        </section>
     </main>
 
-
-
-
-
-
-    <footer class="bg-dark py-2 py-lg-4 container">
-        <ul class="nav justify-content-center redes">
-            <li class="nav-item">
-                <a class="nav-link" href="http://silvina.saucedo@davinci.edu.ar">
-                    <span class="icon-at"></span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="http://www.youtube.com">
-                    <span class="icon-play-button"></span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="http://www.facebook.com.ar/usuario">
-                    <span class="icon-user"></span>
-                </a>
-            </li>
-        </ul>
-
+    <footer class="smiths-footer">
+        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+            <span>Hecho por Silvina Saucedo</span>
+            <ul class="nav redes">
+                <li class="nav-item"><a class="nav-link" href="mailto:silvina.saucedo@davinci.edu.ar"><span class="icon-at"></span></a></li>
+                <li class="nav-item"><a class="nav-link" href="https://www.youtube.com" target="_blank" rel="noreferrer"><span class="icon-play-button"></span></a></li>
+                <li class="nav-item"><a class="nav-link" href="https://github.com/silvyhs90" target="_blank" rel="noreferrer"><span class="icon-user"></span></a></li>
+            </ul>
+        </div>
     </footer>
 
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <script src="plugins/fancybox/jquery.fancybox.min.js"></script>
-
     <script src="plugins/wow/wow.min.js"></script>
-    <script>
-        new WOW().init();
-    </script>
+    <script>new WOW().init();</script>
+    <script src="js/smiths-extra.js"></script>
+</body>
 
-</body></html>
+</html>
